@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const tasks = require('./routes/tasks')
 const path = require('path')
-require('dotenv').config()({ path: path.resolve(__dirname, './.env') })
+require('dotenv').config()({ path: path.resolve(__dirname, './.env') });
 const connectDB = require('./db/connect')
 const notFound = require('./middlewares/not-found')
 const errorHandlerMiddleware = require('./middlewares/error-handler')
