@@ -1,10 +1,11 @@
-require('dotenv').config()
 const express = require('express');
 const app = express();
 const tasks = require('./routes/tasks')
+require('dotenv').config()({ path: path.resolve(__dirname, './.env') })
 const connectDB = require('./db/connect')
 const notFound = require('./middlewares/not-found')
 const errorHandlerMiddleware = require('./middlewares/error-handler')
+const path = require('path')
 
 // Middlewares
 app.use(express.static('./public'))
