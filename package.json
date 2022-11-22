@@ -4,7 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "nodemon app.js"
   },
   "keywords": [],
   "author": "",
@@ -13,9 +13,7 @@
     "dotenv": "^8.6.0",
     "express": "^4.17.1",
     "heroku": "^7.66.4",
-    "mongoose": "^5.11.10"
-  },
-  "devDependencies": {
+    "mongoose": "^5.11.10",
     "nodemon": "^2.0.20"
   }
 }
